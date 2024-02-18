@@ -1,4 +1,4 @@
-apiVersion: apps/V1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: vpromq01
@@ -11,8 +11,8 @@ spec:
   replicas: 1
   template:
     metadata:
-      label:
-        app: vpromq
+      labels:
+        app: vpromq01
     spec:
       containers:
         - name: vpromq01
